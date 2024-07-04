@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<!--   <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>servletdemo.Generic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping> -->
+  
+  <!-- <context-param>
+  <param-name>url</param-name>
+  <param-value>jdbc:mysql://localhost:3306/university</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>username</param-name>
+  <param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>password</param-name>
+  <param-value>Rajesh</param-value>
+  </context-param> -->
+  
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>httpservlet.Context_Param</servlet-class>
+  
+  <init-param>
+  <param-name>url</param-name>
+  <param-value>jdbc:mysql://localhost:3306/university</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>username</param-name>
+  <param-value>root</param-value>
+  </init-param>
+  </servlet>
+</web-app>
